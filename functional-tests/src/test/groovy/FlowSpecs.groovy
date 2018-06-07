@@ -22,8 +22,10 @@ class FlowSpecs extends GebReportingSpec {
             go "https://logontest.gov.bc.ca/clp-cgi/capBceid/logon.cgi?TARGET=https://dev.lowcarbonfuels.gov.bc.ca/&flags=1101:1,7&toggle=1"
         and: "I log in on the SiteMinder Login page"    
             at LoginPage
-            userName.value("Rstens")
-            passWord.value("Tfrs01Testing!")
+            //userName.value("Rstens")
+            //passWord.value("Tfrs01Testing!")
+            userName.value(System.getenv("FT_USERNAME"))
+            passWord.value(System.getenv("FT_PASSWORD"))
             logIn.click()
         and: "I go to the TFRS Dashboard"
             go baseUrl
@@ -40,5 +42,9 @@ class FlowSpecs extends GebReportingSpec {
         where:
             startPage                | clickLink                     || assertPage
             DashboardPage            | "navbar-credit-transactions"  || CreditTransactionsPage
+            DashboardPage            | "footer-about-site"           || CreditTransactionsPage
+            
+            
+
     }
 }
