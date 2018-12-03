@@ -20,23 +20,24 @@
     "moment": "^2.20.1",
     "numeral": "^2.0.6",
     "path": "^0.12.7",
-    "prop-types": "^15.5.8",
-    "react": "^16.x.x",
-    "react-bootstrap": "^0.31.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
     "react-bootstrap-table": "^4.3.1",
-    "react-dom": "^16.x.x",
+    "react-dom": "^16.2.1",
     "react-input-mask": "^1.1.1",
     "react-intl": "^2.4.0",
-    "react-redux": "^5.0.4",
-    "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.2",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.9",
     "react-table": "^6.7.6",
     "react-text-mask": "^5.1.0",
-    "redux": "^3.6.0",
+    "redux": "^3.7.2",
     "redux-logger": "^3.0.1",
     "redux-thunk": "^2.2.0",
-    "webpack": "^3.10.0"
+    "webpack": "^4.0.0",
+    "snyk": "^1.113.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -67,6 +68,9 @@
     "start": "node server",
     "production": "NODE_ENV=production webpack -p --config webpack.production.config.js",
     "build": "webpack",
-    "test": "jest"
-  }
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
