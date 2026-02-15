@@ -8,11 +8,11 @@
     "@fortawesome/fontawesome-free-regular": "^5.0.12",
     "@fortawesome/fontawesome-free-solid": "^5.0.6",
     "@fortawesome/react-fontawesome": "0.0.19",
-    "axios": "^0.16.2",
+    "axios": "^1.13.5",
     "babel-polyfill": "^6.26.0",
-    "body-parser": "^1.17.1",
+    "body-parser": "^1.20.4",
     "eslint-plugin-jest": "^21.15.1",
-    "express": "^4.15.2",
+    "express": "^4.22.0",
     "express-history-api-fallback": "^2.2.1",
     "history": "^4.6.1",
     "http-proxy": "^1.16.2",
@@ -36,7 +36,7 @@
     "redux": "^3.6.0",
     "redux-logger": "^3.0.1",
     "redux-thunk": "^2.2.0",
-    "webpack": "^3.10.0"
+    "webpack": "^5.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
